@@ -1,6 +1,5 @@
 ﻿*.vsidx
 .vs/
-# *.vs/
 *.csproj
 *.sln
 
