@@ -1,7 +1,5 @@
 ﻿*.vsidx
 .vs/
-*.csproj
-*.sln
 
 # Build results
 [Dd]ebug/
