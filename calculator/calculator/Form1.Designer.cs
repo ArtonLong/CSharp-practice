@@ -51,6 +51,8 @@
             sqrt = new Button();
             eqStart = new Button();
             eqEnd = new Button();
+            pi = new Button();
+            period = new Button();
             SuspendLayout();
             // 
             // Equals
@@ -308,11 +310,35 @@
             eqEnd.UseVisualStyleBackColor = true;
             eqEnd.Click += button_Click;
             // 
+            // pi
+            // 
+            pi.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            pi.Location = new Point(12, 390);
+            pi.Name = "pi";
+            pi.Size = new Size(90, 90);
+            pi.TabIndex = 24;
+            pi.Text = "pi";
+            pi.UseVisualStyleBackColor = true;
+            pi.Click += button_Click;
+            // 
+            // period
+            // 
+            period.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            period.Location = new Point(618, 678);
+            period.Name = "period";
+            period.Size = new Size(90, 90);
+            period.TabIndex = 25;
+            period.Text = ".";
+            period.UseVisualStyleBackColor = true;
+            period.Click += button_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(819, 780);
+            Controls.Add(period);
+            Controls.Add(pi);
             Controls.Add(eqEnd);
             Controls.Add(eqStart);
             Controls.Add(sqrt);
@@ -368,5 +394,7 @@
         private Button sqrt;
         private Button eqStart;
         private Button eqEnd;
+        private Button pi;
+        private Button period;
     }
 }

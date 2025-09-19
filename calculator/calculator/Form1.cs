@@ -22,7 +22,7 @@ namespace calculator
         private void equals_Click(object sender, EventArgs e)
         {
             Expression exp = new Expression(textBox.Text);
-            string solve = exp.calculate().ToString();
+            string solve = exp.calculate().ToString().Replace(',', '.');
 
             history.Text = textBox.Text + " = " + solve;
             textBox.Text = solve;
